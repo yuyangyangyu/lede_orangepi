@@ -1,0 +1,10 @@
+--- a/backport-include/linux/acpi_amd_wbrf.h    2025-12-17 09:49:17.423963970 +0800
++++ b/backport-include/linux/acpi_amd_wbrf.h    2025-12-17 09:49:46.803960829 +0800
+@@ -8,6 +8,7 @@
+ #define _ACPI_AMD_WBRF_H
+
+ #if LINUX_VERSION_IS_GEQ(6,8,0)
++#undef _ACPI_AMD_WBRF_H
+ #include_next <linux/acpi_amd_wbrf.h>
+ #else
+ #include <linux/device.h>
