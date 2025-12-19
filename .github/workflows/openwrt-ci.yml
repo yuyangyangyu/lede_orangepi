@@ -131,6 +131,8 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
+        tar -zcvf all_file.tar.gz bin/*
+        mv all_file.tar.gz bin/targets/*/*
         cd bin/targets/*/*
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
