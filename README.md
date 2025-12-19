@@ -10,10 +10,10 @@
 
 ## 📖 项目简介
 
-本项目基于 [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede) 源码编译。针对 Orange Pi Zero 2 (全志 H616) 的硬件特性进行了深度优化，解决了原版源码在 H616 芯片上无线驱动不稳定的问题。
+本项目基于 [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede) 源码编译。针对 Orange Pi Zero 2 (全志 H616) 的硬件特性进行了深度优化，解决了原版源码在 H616 芯片上无线驱动工作的问题。
 
 **为什么选择此固件？**
-市面上大多数 OPi Zero 2 固件仅能稳定运行，本固件集成了适配后的无线驱动，解锁了 Wi-Fi （5G）。
+市面上大多数 OPi Zero 2 固件虽然能稳定运行，但Wi-Fi却无法使用，本固件集成了适配后的无线驱动，解锁了 Wi-Fi （5G）。
 
 ## ✨ 主要特性
 
@@ -33,7 +33,7 @@
 | :--- | :--- |
 | **支持设备** | Orange Pi Zero 2 (512MB / 1GB RAM) |
 | **CPU 架构** | Cortex-A53 (Allwinner H616) |
-| **默认 IP** | `192.168.1.1` |
+| **默认 IP** | `192.168.1.100` |
 | **默认用户** | `root` |
 | **默认密码** | `password` |
 | **默认 Wi-Fi** | LEDE (无密码) |
