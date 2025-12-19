@@ -58,7 +58,7 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
-        sudo ln -s /home/runner/work/DIY_OPENWRT/DIY_OPENWRT /workdir
+        sudo ln -s /home/runner/work/lede_orangepi/lede_orangepi /workdir
         # sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
@@ -70,6 +70,7 @@ jobs:
       run: |
         ls
         pwd
+        echo $GITHUB_WORKSPACE
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
